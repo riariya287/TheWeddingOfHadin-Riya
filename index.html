@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta name="theme-color" content="#2a2118">
+
+    <meta
+        name="description"
+        content="The Wedding of Hadi & Riya — 12 Desember 2026"
+    >
+
+    <title>The Wedding of Hadi & Riya</title>
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="locked">
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div id="page-loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <span>Preparing your story...</span>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         FAIRY TALE OPENING
+    ====================================================== -->
+
+    <section id="opening-screen" class="opening-screen">
+
+        <!-- cinematic background -->
+        <div class="opening-bg"></div>
+
+        <!-- dark cinematic overlay -->
+        <div class="opening-overlay"></div>
+
+        <!-- animated light -->
+        <div class="opening-light"></div>
+
+        <!-- fog -->
+        <div class="fog fog-one"></div>
+        <div class="fog fog-two"></div>
+
+        <!-- stars -->
+        <div id="star-field"></div>
+
+        <!-- gold particles -->
+        <div id="particle-field"></div>
+
+        <!-- decorative petals -->
+        <div class="opening-petal petal-one">✦</div>
+        <div class="opening-petal petal-two">✧</div>
+        <div class="opening-petal petal-three">✦</div>
+
+        <div class="opening-content">
+
+            <div class="opening-top reveal-opening">
+                <span>THE WEDDING OF</span>
+            </div>
+
+            <div class="opening-monogram reveal-opening">
+                H <i>&</i> R
+            </div>
+
+            <h1 class="opening-title reveal-opening">
+                HADI & RIYA
+            </h1>
+
+            <p class="opening-date reveal-opening">
+                12 • 12 • 2026
+            </p>
+
+            <div class="opening-divider reveal-opening">
+                <span></span>
+                <b>✦</b>
+                <span></span>
+            </div>
+
+            <p class="opening-instruction reveal-opening">
+                A new chapter begins...
+            </p>
+
+            <button
+                id="openInvitation"
+                class="open-button reveal-opening"
+                type="button"
+            >
+                <span>BUKA UNDANGAN</span>
+                <i>→</i>
+            </button>
+
+        </div>
+
+        <div class="opening-bottom">
+            <span>SCROLL TO DISCOVER</span>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSITION COVER
+    ====================================================== -->
+
+    <div id="cinematic-transition" class="cinematic-transition">
+
+        <div class="transition-glow"></div>
+
+        <div class="transition-particles"></div>
+
+        <div class="transition-curtain transition-left"></div>
+        <div class="transition-curtain transition-right"></div>
+
+        <div class="transition-center">
+            <span>H</span>
+            <small>&</small>
+            <span>R</span>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+
+    <main id="main-content">
+
+
+        <!-- =================================================
+             MUSIC
+        ================================================== -->
+
+        <audio
+            id="backgroundMusic"
+            loop
+            preload="auto"
+        >
+            <!-- GANTI MUSIK DI SINI -->
+            <source src="assets/music/Ful.mp3" type="audio/mpeg">
+        </audio>
+
+        <button
+            id="musicButton"
+            class="music-button"
+            type="button"
+            aria-label="Music"
+        >
+            <span class="music-icon">♫</span>
+            <span class="music-wave"></span>
+        </button>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            id="hero"
+            class="hero-section"
+        >
+
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-light-orb orb-one"></div>
+            <div class="hero-light-orb orb-two"></div>
+
+            <div class="hero-petal hero-petal-one">❧</div>
+            <div class="hero-petal hero-petal-two">❧</div>
+
+            <div class="hero-content">
+
+                <span
+                    class="eyebrow reveal"
+                    data-reveal="fade"
+                >
+                    THE WEDDING OF
+                </span>
+
+                <h1
+                    class="hero-title reveal"
+                    data-reveal="scale"
+                >
+                    HADI
+                    <span>&</span>
+                    RIYA
+                </h1>
+
+                <div
+                    class="hero-date reveal"
+                    data-reveal="fade"
+                >
+                    <span>12</span>
+                    <i>•</i>
+                    <span>12</span>
+                    <i>•</i>
+                    <span>2026</span>
+                </div>
+
+                <div
+                    class="hero-photo-wrap reveal"
+                    data-reveal="scale"
+                >
+
+                    <div class="hero-photo-glow"></div>
+
+                    <div class="hero-photo-frame">
+
+                        <!-- GANTI FOTO HERO DI SINI -->
+                        <img
+                            src="assets/images/gallery1.jpg"
+                            alt="Hadi & Riya"
+                            class="hero-photo"
+                        >
+
+                    </div>
+
+                </div>
+
+                <p
+                    class="hero-caption reveal"
+                    data-reveal="fade"
+                >
+                    Together with their families
+                </p>
+
+            </div>
+
+            <div class="hero-scroll">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             OPENING MESSAGE
+        ================================================== -->
+
+        <section
+            id="opening-message"
+            class="section opening-message-section"
+        >
+
+            <div class="section-glow"></div>
+
+            <div class="container narrow">
+
+                <span
+                    class="section-kicker reveal"
+                    data-reveal="fade"
+                >
+                    WITH LOVE
+                </span>
+
+                <div class="ornament reveal">
+                    ✦
+                </div>
+
+                <h2
+                    class="section-title reveal"
+                    data-reveal="up"
+                >
+                    Assalamu'alaikum<br>
+                    Warahmatullahi Wabarakatuh
+                </h2>
+
+                <div class="gold-line reveal"></div>
+
+                <p
+                    class="opening-text reveal"
+                    data-reveal="up"
+                >
+                    Atas nama Tuhan Yang Maha Esa, dengan penuh kebahagiaan
+                    kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam
+                    acara pernikahan kami.
+                </p>
+
+                <p
+                    class="opening-quote reveal"
+                    data-reveal="up"
+                >
+                    "Every love story is beautiful,
+                    but ours is our favorite."
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COUPLE
+        ================================================== -->
+
+        <section
+            id="couple"
+            class="section couple-section"
+        >
+
+            <div class="section-bg-pattern"></div>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        THE COUPLE
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Two Souls,<br>
+                        One Story
+                    </h2>
+
+                </div>
+
+
+                <div class="couple-grid">
+
+
+                    <!-- HADI -->
+
+                    <article
+                        class="person-card reveal"
+                        data-reveal="left"
+                    >
+
+                        <div class="person-photo">
+
+                            <div class="photo-decoration"></div>
+
+                            <!-- GANTI FOTO HADI DI SINI -->
+                            <img
+                                src="assets/images/hadi.jpg"
+                                alt="Hadianto Kurniawan Tan"
+                            >
+
+                            <div class="photo-number">
+                                01
+                            </div>
+
+                        </div>
+
+                        <div class="person-info">
+
+                            <span class="person-label">
+                                THE GROOM
+                            </span>
+
+                            <h3>
+                                Hadianto<br>
+                                Kurniawan Tan
+                            </h3>
+
+                            <p>
+                                Putra dari
+                            </p>
+
+                            <strong>
+                                Bapak Tan Tjoen Hwa
+                                <br>
+                                &
+                                <br>
+                                Ibu Tjhin Tjhiu Loe
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="couple-symbol reveal">
+                        <span>H</span>
+                        <small>&</small>
+                        <span>R</span>
+                    </div>
+
+
+                    <!-- RIYA -->
+
+                    <article
+                        class="person-card reveal"
+                        data-reveal="right"
+                    >
+
+                        <div class="person-photo">
+
+                            <div class="photo-decoration"></div>
+
+                            <!-- GANTI FOTO RIYA DI SINI -->
+                            <img
+                                src="assets/images/riya.jpg"
+                                alt="Ilmi Riadoh"
+                            >
+
+                            <div class="photo-number">
+                                02
+                            </div>
+
+                        </div>
+
+                        <div class="person-info">
+
+                            <span class="person-label">
+                                THE BRIDE
+                            </span>
+
+                            <h3>
+                                Ilmi<br>
+                                Riadoh
+                            </h3>
+
+                            <p>
+                                Putri dari
+                            </p>
+
+                            <strong>
+                                Bapak Muhammad Saleh
+                                <br>
+                                &
+                                <br>
+                                Ibu Nur Alam Ray
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             OUR STORY
+        ================================================== -->
+
+        <section
+            id="story"
+            class="section story-section"
+        >
+
+            <div class="story-bg"></div>
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        OUR STORY
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Every chapter<br>
+                        led us here.
+                    </h2>
+
+                </div>
+
+
+                <div class="story-timeline">
+
+                    <div class="timeline-line">
+                        <span></span>
+                    </div>
+
+
+                    <!-- STORY 01 -->
+
+                    <article
+                        class="story-item reveal"
+                        data-reveal="left"
+                    >
+
+                        <div class="story-dot">
+                            01
+                        </div>
+
+                        <div class="story-content">
+
+                            <span class="story-date">
+                                THE BEGINNING
+                            </span>
+
+                            <h3>
+                                Where It All Began
+                            </h3>
+
+                            <p>
+                                Setiap kisah memiliki awal.
+                                Di sinilah perjalanan Hadi dan Riya
+                                mulai menemukan arah yang sama.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- STORY 02 -->
+
+                    <article
+                        class="story-item reverse reveal"
+                        data-reveal="right"
+                    >
+
+                        <div class="story-dot">
+                            02
+                        </div>
+
+                        <div class="story-content">
+
+                            <span class="story-date">
+                                A BEAUTIFUL JOURNEY
+                            </span>
+
+                            <h3>
+                                Growing Together
+                            </h3>
+
+                            <p>
+                                Waktu membawa banyak cerita,
+                                tawa, tantangan, dan momen
+                                yang membuat perjalanan ini semakin berarti.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- STORY 03 -->
+
+                    <article
+                        class="story-item reveal"
+                        data-reveal="left"
+                    >
+
+                        <div class="story-dot">
+                            03
+                        </div>
+
+                        <div class="story-content">
+
+                            <span class="story-date">
+                                FOREVER
+                            </span>
+
+                            <h3>
+                                And Then Forever
+                            </h3>
+
+                            <p>
+                                Hingga akhirnya kami memutuskan
+                                untuk melanjutkan perjalanan ini
+                                dalam satu ikatan pernikahan.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             COUNTDOWN
+        ================================================== -->
+
+        <section
+            id="countdown"
+            class="section countdown-section"
+        >
+
+            <div class="countdown-bg"></div>
+
+            <div class="container">
+
+                <div class="countdown-card">
+
+                    <div class="glass-shine"></div>
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        COUNTING DOWN TO
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Our Special Day
+                    </h2>
+
+                    <div
+                        id="countdownTimer"
+                        class="countdown-grid reveal"
+                        data-reveal="scale"
+                    >
+
+                        <div class="count-box">
+                            <strong id="days">00</strong>
+                            <span>DAYS</span>
+                        </div>
+
+                        <div class="count-box">
+                            <strong id="hours">00</strong>
+                            <span>HOURS</span>
+                        </div>
+
+                        <div class="count-box">
+                            <strong id="minutes">00</strong>
+                            <span>MINUTES</span>
+                        </div>
+
+                        <div class="count-box">
+                            <strong id="seconds">00</strong>
+                            <span>SECONDS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="countdown-date">
+                        12 • 12 • 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EVENT
+        ================================================== -->
+
+        <section
+            id="event"
+            class="section event-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        SAVE THE DATE
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Akad & Resepsi
+                    </h2>
+
+                </div>
+
+
+                <div class="event-card reveal" data-reveal="scale">
+
+                    <div class="event-card-top">
+
+                        <span class="event-label">
+                            WEDDING DAY
+                        </span>
+
+                        <div class="event-date-large">
+                            <span>12</span>
+                            <i>•</i>
+                            <span>12</span>
+                            <i>•</i>
+                            <span>2026</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="event-divider">
+                        <span></span>
+                        <b>✦</b>
+                        <span></span>
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <div class="event-detail">
+
+                            <span class="detail-icon">
+                                ♡
+                            </span>
+
+                            <div>
+                                <small>TIME</small>
+                                <strong>
+                                    Pukul 11.00 WIB
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-detail">
+
+                            <span class="detail-icon">
+                                ◇
+                            </span>
+
+                            <div>
+                                <small>VENUE</small>
+                                <strong>
+                                    Vihara Sila Paramita
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-detail">
+
+                            <span class="detail-icon">
+                                ✦
+                            </span>
+
+                            <div>
+                                <small>ADDRESS</small>
+
+                                <strong>
+                                    Jl. Cipinang Jaya Raya No. 1,
+                                    RT 9/RW 7, Cipinang Besar Selatan,
+                                    Kec. Jatinegara,
+                                    Jakarta Timur
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        class="maps-button"
+                        href="https://www.google.com/maps/search/?api=1&query=Vihara+Sila+Paramita+Jl.+Cipinang+Jaya+Raya+No.+1+Jakarta+Timur"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span>BUKA GOOGLE MAPS</span>
+                        <i>↗</i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GALLERY
+        ================================================== -->
+
+        <section
+            id="gallery"
+            class="section gallery-section"
+        >
+
+            <div class="gallery-bg"></div>
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        OUR MOMENTS
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        A Collection<br>
+                        of Memories
+                    </h2>
+
+                </div>
+
+
+                <div class="gallery-editorial">
+
+
+                    <!-- GALLERY 1 -->
+
+                    <button
+                        class="gallery-item gallery-large reveal"
+                        data-reveal="scale"
+                        data-image="assets/images/gallery1.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery1.jpg"
+                            alt="Hadi & Riya"
+                        >
+
+                        <span class="gallery-number">
+                            01
+                        </span>
+                    </button>
+
+
+                    <!-- GALLERY 2 -->
+
+                    <button
+                        class="gallery-item gallery-small gallery-two reveal"
+                        data-reveal="right"
+                        data-image="assets/images/gallery2.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery2.jpg"
+                            alt="Wedding moment"
+                        >
+
+                        <span class="gallery-number">
+                            02
+                        </span>
+                    </button>
+
+
+                    <!-- GALLERY 3 -->
+
+                    <button
+                        class="gallery-item gallery-medium gallery-three reveal"
+                        data-reveal="left"
+                        data-image="assets/images/gallery3.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery3.jpg"
+                            alt="Wedding moment"
+                        >
+
+                        <span class="gallery-number">
+                            03
+                        </span>
+                    </button>
+
+
+                    <!-- GALLERY 4 -->
+
+                    <button
+                        class="gallery-item gallery-wide gallery-four reveal"
+                        data-reveal="up"
+                        data-image="assets/images/gallery4.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery4.jpg"
+                            alt="Wedding moment"
+                        >
+
+                        <span class="gallery-number">
+                            04
+                        </span>
+                    </button>
+
+
+                    <!-- GALLERY 5 -->
+
+                    <button
+                        class="gallery-item gallery-small gallery-five reveal"
+                        data-reveal="right"
+                        data-image="assets/images/gallery5.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery5.jpg"
+                            alt="Wedding moment"
+                        >
+
+                        <span class="gallery-number">
+                            05
+                        </span>
+                    </button>
+
+
+                    <!-- GALLERY 6 -->
+
+                    <button
+                        class="gallery-item gallery-medium gallery-six reveal"
+                        data-reveal="left"
+                        data-image="assets/images/gallery6.jpg"
+                        type="button"
+                    >
+                        <!-- GANTI FOTO DI SINI -->
+                        <img
+                            src="assets/images/gallery6.jpg"
+                            alt="Wedding moment"
+                        >
+
+                        <span class="gallery-number">
+                            06
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WEDDING WISHES
+        ================================================== -->
+
+        <section
+            id="wishes"
+            class="section wishes-section"
+        >
+
+            <div class="container narrow">
+
+                <div class="section-heading center">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        LEAVE A MESSAGE
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Wedding Wishes
+                    </h2>
+
+                    <p class="section-description reveal">
+                        Tuliskan doa dan ucapan terbaik
+                        untuk Hadi & Riya.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="wishForm"
+                    class="wish-form reveal"
+                    data-reveal="up"
+                >
+
+                    <div class="form-group">
+
+                        <label for="wishName">
+                            Nama
+                        </label>
+
+                        <input
+                            id="wishName"
+                            name="name"
+                            type="text"
+                            placeholder="Nama Anda"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="wishMessage">
+                            Ucapan
+                        </label>
+
+                        <textarea
+                            id="wishMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="Tulis ucapan untuk kedua mempelai..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="wishAttendance">
+                            Kehadiran
+                        </label>
+
+                        <select
+                            id="wishAttendance"
+                            name="attendance"
+                            required
+                        >
+                            <option value="">
+                                Pilih konfirmasi
+                            </option>
+
+                            <option value="Hadir">
+                                Ya, saya akan hadir
+                            </option>
+
+                            <option value="Tidak Hadir">
+                                Maaf, saya tidak dapat hadir
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        KIRIM UCAPAN
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="wishList"
+                    class="wish-list"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WEDDING GIFT
+        ================================================== -->
+
+        <section
+            id="gift"
+            class="section gift-section"
+        >
+
+            <div class="gift-bg"></div>
+
+            <div class="container narrow">
+
+                <div class="section-heading center">
+
+                    <span
+                        class="section-kicker reveal"
+                        data-reveal="fade"
+                    >
+                        WITH LOVE
+                    </span>
+
+                    <h2
+                        class="section-title reveal"
+                        data-reveal="up"
+                    >
+                        Wedding Gift
+                    </h2>
+
+                    <p
+                        class="section-description reveal"
+                    >
+                        Doa dan kehadiran Anda merupakan
+                        hadiah terindah bagi kami.
+                    </p>
+
+                </div>
+
+
+                <!-- GANTI DATA REKENING DI SINI -->
+
+                <div
+                    class="gift-card reveal"
+                    data-reveal="scale"
+                >
+
+                    <div class="gift-card-glow"></div>
+
+                    <div class="gift-card-top">
+
+                        <span>
+                            WEDDING GIFT
+                        </span>
+
+                        <b>
+                            BANK
+                        </b>
+
+                    </div>
+
+                    <div class="gift-chip"></div>
+
+                    <div class="gift-account">
+
+                        <small>
+                            ACCOUNT NUMBER
+                        </small>
+
+                        <strong id="accountNumber">
+                            1234567890
+                        </strong>
+
+                    </div>
+
+                    <div class="gift-owner">
+                        Hadianto Kurniawan Tan
+                    </div>
+
+                    <button
+                        id="copyAccount"
+                        class="copy-button"
+                        type="button"
+                    >
+                        COPY ACCOUNT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CLOSING
+        ================================================== -->
+
+        <section
+            id="closing"
+            class="closing-section"
+        >
+
+            <div class="closing-bg"></div>
+            <div class="closing-overlay"></div>
+
+            <div id="closingParticles"></div>
+
+            <div class="closing-content">
+
+                <span
+                    class="section-kicker reveal"
+                    data-reveal="fade"
+                >
+                    UNTIL WE MEET
+                </span>
+
+                <h2
+                    class="closing-title reveal"
+                    data-reveal="scale"
+                >
+                    Thank You
+                </h2>
+
+                <p
+                    class="closing-text reveal"
+                    data-reveal="up"
+                >
+                    For being part of our special day.
+                </p>
+
+                <div
+                    class="closing-divider reveal"
+                    data-reveal="fade"
+                >
+                    <span></span>
+                    <b>✦</b>
+                    <span></span>
+                </div>
+
+                <h3
+                    class="closing-names reveal"
+                    data-reveal="up"
+                >
+                    HADI & RIYA
+                </h3>
+
+                <p
+                    class="closing-date reveal"
+                    data-reveal="fade"
+                >
+                    12 • 12 • 2026
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="footer">
+
+            <p>
+                With love, Hadi & Riya
+            </p>
+
+            <span>
+                © 2026
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ====================================================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            id="lightboxClose"
+            class="lightbox-close"
+            type="button"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <button
+            id="lightboxPrev"
+            class="lightbox-nav lightbox-prev"
+            type="button"
+            aria-label="Previous"
+        >
+            ‹
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Gallery preview"
+            >
+
+            <div
+                id="lightboxCounter"
+                class="lightbox-counter"
+            >
+                01 / 06
+            </div>
+
+        </div>
+
+        <button
+            id="lightboxNext"
+            class="lightbox-nav lightbox-next"
+            type="button"
+            aria-label="Next"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        id="toast"
+        class="toast"
+    >
+        <span>✓</span>
+        <p>Nomor rekening berhasil disalin</p>
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
